@@ -6,7 +6,7 @@ This repository is configured with some node modules for developing and building
 git clone https://github.com/AhsanShihab/Bootstrap-project-template.git
 ```
 
-Then run,
+Then change the working directory to `Bootstrap-project-template` and run,
 
 ```bash
 npm install
@@ -35,7 +35,7 @@ npm start
 For build, run
 
 ```bash
-npm build
+npm run build
 ```
 
 Build will put all the built files in `dist` folder.
