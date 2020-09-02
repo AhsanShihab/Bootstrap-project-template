@@ -1,6 +1,6 @@
 # Bootstrap Project starter template
 
-This repository is configured with some node modules for developing and building Bootstrap project. To get started download or clone the repository
+This repository is configured with some node modules for developing and building Bootstrap project offline. To get started download or clone the repository
 
 ```bash
 git clone https://github.com/AhsanShihab/Bootstrap-project-template.git
@@ -14,16 +14,23 @@ npm install
 
 ## Linux or MacOS
 The scripts in `package.json` file is configured for Windows. If you are on MacOS or Linux, replace all the \\" (back slash-double quote) with \' (single qoute).
+```
+# In windows
+"parallelshell \"npm run watch:scss\" \"npm run lite\""
+
+# In Linux/MacOS
+"parallelshell 'npm run watch:scss' 'npm run lite'"
+```
 
 ## New HTML files
-The project is build with two example html files `index.html` and `aboutus.html`. You should copy the starter code to your new pages for proper import of all the necessary files. As you add new pages, insert them in `usemin` script in `package.json` file as following.
+The project is built with two example html files `index.html` and `aboutus.html`. You should copy the starter code to your new pages for proper import of all the necessary files. As you add new pages, insert them in `usemin` script in `package.json` file as following.
 
 ```
 && usemin your_page.html -d dist --htmlmin -o dist/your_page.html
 ```
 
 ## CSS
-Use sass for custom styling your webpage. The `styles.scss` file will be automatically converted to `styles.css`. If you want to edit css file directly, create another css file with different name and import that in your html file.
+Use sass for custom styling your webpage. The `styles.scss` file will be automatically converted to `styles.css`. If you also want to use css code directly, create another css file with different name and import that in your html file.
 
 ## Dev and Build
 
@@ -52,7 +59,7 @@ For supporting Bootstrap component functionalities
 For inserting icons in website.
 
 ### Lite Server
-For providing a live server for development
+For providing a live server during development
 
 ### node-sass
 For converting scss files to css files
